@@ -13,6 +13,9 @@ class Entity {
 	public:
 		Entity(): position(0, 0) { }
 		Entity(int x, int y): position(x, y) { }
+		virtual ~Entity() {}
+		virtual std::string get_on_top_string() = 0;
+
 		struct Image_Data {
 			Image_Data() {
 				memset(data, 0, DATA_X * DATA_Y);

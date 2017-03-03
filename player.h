@@ -3,13 +3,14 @@
 
 #include "entity.h"
 
-class Player : public Entity {
+class Entity_Player : public Entity {
 	
 	private:
 
 	public:
-		Player(): Player(0, 0) {}
-		Player(int, int); 
+		Entity_Player(): Entity_Player(0, 0) {}
+		Entity_Player(int, int); 
+		virtual std::string get_on_top_string();
 		
 };
 
