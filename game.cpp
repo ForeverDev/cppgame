@@ -122,7 +122,7 @@ void Game_State::render_screen() {
 
 	for (int i = 0; i < bottom_rows.size(); i++) {
 		if (bottom_rows[i] != "") {
-			std::cout << i << ". " << bottom_rows[i];
+			std::cout << (i + 1) << ". " << bottom_rows[i];
 		}
 		std::cout << std::endl;
 	}
